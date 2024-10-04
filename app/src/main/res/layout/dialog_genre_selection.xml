@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select your favourite music genre"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:paddingBottom="16dp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="5"
+        android:layout_margin="8dp">
+
+        <!-- Example item in the grid using CardView -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardPop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="4dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/iconPop"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/icons8_pop_music_96"/>
+
+                <TextView
+                    android:id="@+id/genrePop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pop"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:textAppearance="?attr/textAppearanceBody1"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Repeat similar blocks for other genres -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardRock"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="4dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/iconRock"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/icons8_rock_music_100"/>
+
+                <TextView
+                    android:id="@+id/genreRock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rock"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:textAppearance="?attr/textAppearanceBody1"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Repeat this pattern for Hip-Hop, Country, Jazz, Classical, R&B, Reggae, Latin, and K-Pop genres -->
+
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="5"
+        android:layout_margin="8dp">
+
+        <!-- Example item in the grid using CardView -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardHipHop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="4dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/iconHipHop"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/icons8_hip_hop_music_100"/>
+
+                <TextView
+                    android:id="@+id/genreHipHop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hip-Hop"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:textAppearance="?attr/textAppearanceBody1"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Repeat similar blocks for other genres -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardCountry"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="4dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/iconCountry"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/icons8_us_music_96"/>
+
+                <TextView
+                    android:id="@+id/genreCountry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Country"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:textAppearance="?attr/textAppearanceBody1"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Repeat this pattern for Hip-Hop, Country, Jazz, Classical, R&B, Reggae, Latin, and K-Pop genres -->
+
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="5"
+        android:layout_margin="8dp">
+
+        <!-- Example item in the grid using CardView -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardJazz"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="4dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/iconJazz"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/icons8_jazz_music_96"/>
+
+                <TextView
+                    android:id="@+id/genreJazz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jazz"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:textAppearance="?attr/textAppearanceBody1"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Repeat similar blocks for other genres -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardClassical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="4dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/iconClassical"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/icons8_classic_music_100"/>
+
+                <TextView
+                    android:id="@+id/genreClassical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Classical"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:textAppearance="?attr/textAppearanceBody1"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Repeat this pattern for Hip-Hop, Country, Jazz, Classical, R&B, Reggae, Latin, and K-Pop genres -->
+
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="5"
+        android:layout_margin="8dp">
+
+        <!-- Example item in the grid using CardView -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardRB"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="4dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/iconRB"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/icons8_blues_64"/>
+
+                <TextView
+                    android:id="@+id/genreRB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="R&amp;B"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:textAppearance="?attr/textAppearanceBody1"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Repeat similar blocks for other genres -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardReggae"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="4dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/iconReggae"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/icons8_reggae_100"/>
+
+                <TextView
+                    android:id="@+id/genreReggae"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reggae"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:textAppearance="?attr/textAppearanceBody1"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Repeat this pattern for Hip-Hop, Country, Jazz, Classical, R&B, Reggae, Latin, and K-Pop genres -->
+
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="5"
+        android:layout_margin="8dp">
+
+        <!-- Example item in the grid using CardView -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardLatin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="4dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/iconLatin"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/icons8_tango_100"/>
+
+                <TextView
+                    android:id="@+id/genreLatin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Latin"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:textAppearance="?attr/textAppearanceBody1"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Repeat similar blocks for other genres -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardKpop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="4dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/ripple">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/iconKpop"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/icons8_hammer_bong_100"/>
+
+                <TextView
+                    android:id="@+id/genreKpop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="K-Pop"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:textAppearance="?attr/textAppearanceBody1"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Repeat this pattern for Hip-Hop, Country, Jazz, Classical, R&B, Reggae, Latin, and K-Pop genres -->
+
+    </GridLayout>
+</LinearLayout>

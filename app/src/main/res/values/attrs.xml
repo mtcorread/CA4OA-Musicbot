@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="vectorFillColor" format="color" />
+    <attr name="showMoreTextColor" format="reference|color" />
+    <declare-styleable name="CustomCardViewStyles">
+        <attr name="outerCardViewStyle" format="reference" />
+        <attr name="innerCardViewStyle" format="reference" />
+    </declare-styleable>
+
+</resources>
